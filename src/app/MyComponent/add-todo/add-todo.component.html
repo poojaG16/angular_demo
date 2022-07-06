@@ -1,0 +1,19 @@
+<div class="containner my-3">
+  <form (ngSubmit) ="onSubmit()">
+    <div class="row mb-3">
+      <label for="title" class="col-sm-2 col-form-label">Title</label>
+      <div class="col-sm-5">
+        <input type="text" [(ngModel)]="title" class="form-control" name="title" id="title">
+      </div>
+    </div>
+    <div class="row mb-3">
+      <label for="descr"  class="col-sm-2 col-form-label">Description</label>
+      <div class="col-sm-5">
+        <input type="textarea" [(ngModel)]="descr" name="descr" class="form-control" id="descr">
+      </div>
+    </div>
+    <div class="row mb-3">
+      <button type="submit" class="btn btn-primary">Add ToDo</button>
+    </div>
+  </form>
+</div>
